@@ -1,0 +1,82 @@
+﻿<Page x:Class="QuizzMaker.PageReponses"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:QuizzMaker"
+      mc:Ignorable="d" 
+      d:DesignHeight="450"
+      Title="PageReponses" Width="425" >
+
+    <StackPanel  Margin="0, 0,10,0" >
+        <Label  Margin="0, 10,2,0" Content="Sélectionnez une question à laquelle vous souaitez ajouter les réponses  :" Target="{Binding ElementName=txtQuestion}" />
+        <StackPanel Orientation="Vertical">
+            <StackPanel Orientation="Horizontal">
+                <Border Background="LightGreen" Width="12" Height="12"  BorderBrush="Green" Margin="10,0"></Border>
+                <TextBlock TextWrapping="WrapWithOverflow" FontStyle="Italic" Foreground="Gray">Cette question a une bonne réponse validée.</TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Border Width="12" Height="12"  BorderBrush="Green" Margin="10,0" Background="LightSalmon"/>
+                <TextBlock TextWrapping="WrapWithOverflow" FontStyle="Italic" Foreground="Gray" VerticalAlignment="Center" >Cette question n'a pas encore une bonne réponse validée.</TextBlock>
+            </StackPanel>
+        </StackPanel>
+        <ListBox  Margin="10, 10,2,10" Name="lstQuestions" SelectionChanged="LstQuestions_SelectionChanged" HorizontalContentAlignment="Stretch" Height="91" >
+            <ListBox.ItemTemplate >
+                <DataTemplate>
+                    <Grid Margin="0,2">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="10" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Text= "{Binding NumQuestion}">
+                                <Span> : </Span>
+                        </TextBlock>
+                        <TextBlock Grid.Column="1" TextTrimming="CharacterEllipsis" Text="{Binding LibelleQuestion}" />
+                        </Grid>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+
+        </ListBox>
+        <Separator Height="5"/>
+        <GroupBox BorderBrush="{x:Null}" Name="GbxReponses" IsEnabled="False">
+            <StackPanel>
+                <Label  Margin="0, 10,2,0" Content="Réponses :" Target="{Binding ElementName=txtReponse}" />
+                <TextBox x:Name="txtReponse" LostFocus="TxtReponse_LostFocus" GotFocus="TxtReponse_GotFocus" 
+                 Margin="10, 10,2,10" AcceptsReturn="True"  Height="32" UndoLimit="150"  Text="Réponse possible..." FontStyle="Italic" Foreground="Gray"  />
+                <StackPanel Orientation="Horizontal" Margin="0,0,0,5">
+                    <Label  Margin="0, 0,2,0" Content="Bonne réponse :" Target="{Binding ElementName=chkBonneReponse}" />
+                    <CheckBox  Name="chkBonneReponse" FlowDirection="RightToLeft" VerticalAlignment="Center">
+                    </CheckBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,0,0,10">
+                    <Button Margin="0,0,5,0" Click="NewReponse_Click">Nouveau</Button>
+                    <Button Margin="5,0" Name="btnSave" Click="SaveReponse_Click">Enregistrer</Button>
+                    <Button Margin="5,0" Name="btnDelete" Click="DeleteReponse_Click">Supprimer</Button>
+                </StackPanel>
+                <ListBox  Margin="10, 10,2,10" Name="lstReponse" SelectionChanged ="LstReponse_SelectionChanged" HorizontalContentAlignment="Stretch" Height="91" >
+                    <ListBox.ItemTemplate >
+                        <DataTemplate>
+                            <Grid Margin="0,2" >
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="10" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="20"/>
+                                    <ColumnDefinition Width="20" />
+                                </Grid.ColumnDefinitions>
+                                <TextBlock Text= "{Binding Ordre}">
+                                <Span> : </Span>
+                                </TextBlock>
+                                <TextBlock Grid.Column="1" TextTrimming="CharacterEllipsis" Text="{Binding LibelleReponse}" />
+                                <Button BorderBrush="Transparent"  Background="Transparent" Grid.Column="2" Content="▲" FontSize="9" Width="15" Name ="btnUpReponse" Click="BtnUpReponse_Click" Height="15"/>
+                                <Button BorderBrush="Transparent" Background="Transparent" Grid.Column="3" Content="▼"  FontSize="9" Width="15" Name ="btnDownReponse" Click="BtnDownReponse_Click" Height="15"/>
+                            </Grid>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+
+                </ListBox>
+            </StackPanel>
+        </GroupBox>
+
+
+    </StackPanel>
+</Page>
