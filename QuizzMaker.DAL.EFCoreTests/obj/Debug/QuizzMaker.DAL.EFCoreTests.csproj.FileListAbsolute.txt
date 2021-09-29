@@ -1,0 +1,9 @@
+C:\Users\Clem\Documents\DEV\CSharp\QuizzMaker\QuizzMaker.DAL.EFCoreTests\bin\Debug\QuizzMaker.DAL.EFCoreTests.dll
+C:\Users\Clem\Documents\DEV\CSharp\QuizzMaker\QuizzMaker.DAL.EFCoreTests\bin\Debug\QuizzMaker.DAL.EFCoreTests.pdb
+C:\Users\Clem\Documents\DEV\CSharp\QuizzMaker\QuizzMaker.DAL.EFCoreTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\Clem\Documents\DEV\CSharp\QuizzMaker\QuizzMaker.DAL.EFCoreTests\bin\Debug\fr\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
+C:\Users\Clem\Documents\DEV\CSharp\QuizzMaker\QuizzMaker.DAL.EFCoreTests\obj\Debug\QuizzMaker.DAL.EFCoreTests.csprojAssemblyReference.cache
+C:\Users\Clem\Documents\DEV\CSharp\QuizzMaker\QuizzMaker.DAL.EFCoreTests\obj\Debug\QuizzMaker.DAL.EFCoreTests.csproj.CoreCompileInputs.cache
+C:\Users\Clem\Documents\DEV\CSharp\QuizzMaker\QuizzMaker.DAL.EFCoreTests\obj\Debug\QuizzMaker.DAL.EFCoreTests.csproj.CopyComplete
+C:\Users\Clem\Documents\DEV\CSharp\QuizzMaker\QuizzMaker.DAL.EFCoreTests\obj\Debug\QuizzMaker.DAL.EFCoreTests.dll
+C:\Users\Clem\Documents\DEV\CSharp\QuizzMaker\QuizzMaker.DAL.EFCoreTests\obj\Debug\QuizzMaker.DAL.EFCoreTests.pdb

@@ -1,0 +1,6 @@
+C:\Users\Clem\Documents\DEV\CSharp\QuizzMaker\QuizzMaker.BO\bin\Debug\QuizzMaker.BO.dll
+C:\Users\Clem\Documents\DEV\CSharp\QuizzMaker\QuizzMaker.BO\bin\Debug\QuizzMaker.BO.pdb
+C:\Users\Clem\Documents\DEV\CSharp\QuizzMaker\QuizzMaker.BO\obj\Debug\QuizzMaker.BO.csprojAssemblyReference.cache
+C:\Users\Clem\Documents\DEV\CSharp\QuizzMaker\QuizzMaker.BO\obj\Debug\QuizzMaker.BO.csproj.CoreCompileInputs.cache
+C:\Users\Clem\Documents\DEV\CSharp\QuizzMaker\QuizzMaker.BO\obj\Debug\QuizzMaker.BO.dll
+C:\Users\Clem\Documents\DEV\CSharp\QuizzMaker\QuizzMaker.BO\obj\Debug\QuizzMaker.BO.pdb
